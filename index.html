@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body class="black-bg">
     <!-- ? Preloader Start -->
@@ -45,7 +49,7 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            <a href="index.html"><h1 class="header-csfaq">C.S.F.A</h1></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
@@ -54,8 +58,8 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="courses.html">Courses</a></li>
-                                    <li><a href="pricing.html">Pricing</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <!-- <li><a href="pricing.html">Pricing</a></li> -->
+                                    <!-- <li><a href="gallery.html">Gallery</a></li> -->
                                     <!-- <li><a href="blog.html">Blog</a>
                                         <ul class="submenu">
                                             <li><a href="blog.html">Blog</a></li>
@@ -68,7 +72,7 @@
                             </nav>
                         </div>          
                         <!-- Header-btn -->
-                        <div class="header-btns d-none d-lg-block f-right">
+                        <!-- <div class="header-btns d-none d-lg-block f-right">
                             <button class="cta">
                                 <span class="span"><a href="tel:+91 9654260660"> CONTACT ME </a></span>
                                 <span class="second">
@@ -81,7 +85,7 @@
                                   </svg>
                                 </span> 
                             </button>
-                       </div>
+                       </div> -->
                        <!-- Mobile Menu -->
                        <div class="col-12">
                         <div class="mobile_menu d-block d-lg-none"></div>
@@ -113,9 +117,10 @@
             </div>
         </div>
     </div>
+    
     <!-- slider Area End-->
     <!-- Traning categories Start -->
-    <section class="traning-categories white-bg">
+    <!-- <section class="traning-categories white-bg">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-6 col-lg-6">
@@ -148,7 +153,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Traning categories End-->
     <!--? Team -->
     <section class="team-area fix">
@@ -160,7 +165,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            
+            <!-- <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
                         <div class="cat-icon">
@@ -194,12 +200,51 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
+    </section>
+    <section class="courses" id="courses">
+        <h2>Our Certification Programs</h2>
+        <div class="course">
+            <h3>Calisthenics Trainer Certification</h3>
+            <p>Designed for gym trainers looking to specialize in calisthenics and increase their marketability.</p>
+        </div>
+        <div class="course">
+            <h3>Advanced Calisthenics Techniques</h3>
+            <p>Learn advanced techniques to train your clients more effectively.</p>
+        </div>
+    </section>
+    <section class="why-certify">
+        <h2>Why Get Certified?</h2>
+        <ul>
+            <li>Enhance your professional credentials</li>
+            <li>Increase your earning potential</li>
+            <li>Gain advanced knowledge in calisthenics</li>
+            <li>Stand out in the fitness industry</li>
+        </ul>
+    </section>
+    
+    <section class="testimonials" id="testimonials">
+        <h2>Certified Trainers’ Success Stories</h2>
+        <p>Hear from trainers who have boosted their careers with our certification programs.</p>
+    </section>
+    
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Sign up for the certification program.</li>
+            <li>Complete the course and training sessions.</li>
+            <li>Pass the certification exam.</li>
+            <li>Receive your certification and elevate your career.</li>
+        </ol>
+    </section>
+    <section class="call-to-action">
+        <h2>Ready to Elevate Your Career?</h2>
+        <button onclick="scrollToSection('contact')">Enroll Now</button>
     </section>
     <!-- Services End -->
     <!--? Gallery Area Start -->
-    <div class="gallery-area section-padding30 ">
+    <!-- <div class="gallery-area section-padding30 ">
         <div class="container-fluid ">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
@@ -270,7 +315,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Gallery Area End -->
     <!-- Courses area start -->
     <section class="pricing-area section-padding40 fix">
@@ -300,6 +345,8 @@
                                         <p>Free riding </p>
                                     </div>
                                 </div>
+                                gdufguagghuagreugigraweiurc irgig iawgiwgri
+                                fiuwy iagiua wtt ww w 
                                 <div class="single-features">
                                     <div class="features-icon">
                                         <img src="assets/img/icon/check.svg" alt="">
@@ -559,8 +606,8 @@
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>
-                            <p>jacson767@gmail.com</p>
-                            <p>contact56@zacsion.com</p>
+                            <p>harshitsharma@gmail.com</p>
+                            <p>csfa@gmail.com</p>
                         </div>
                     </div>
                 </div>
