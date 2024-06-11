@@ -8,7 +8,14 @@
         'overflow': 'visible'
       });
     });
-
+/**
+   * Frequently Asked Questions Toggle
+   */
+document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
+  faqItem.addEventListener('click', () => {
+    faqItem.parentNode.classList.toggle('faq-active');
+  });
+});
 /* 2. sticky And Scroll UP */
     $(window).on('scroll', function () {
       var scroll = $(window).scrollTop();
