@@ -37,95 +37,6 @@
 .gray-bg {
   background: #f5f5f5;
 }
-/*--------------------------------------------------------------
-# Faq Section
---------------------------------------------------------------*/
-.faq .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-}
-
-.faq .content p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.faq .faq-container .faq-item {
-  position: relative;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 5px 25px 0px color-mix(in srgb, var(--default-color), transparent 90%);
-  overflow: hidden;
-  background: -moz-linear-gradient(top, #FF0000 0%, #FF7878 100%);
-  /* border-radius: 10px; */
-}
-
-.faq .faq-container .faq-item:last-child {
-  margin-bottom: 0;
-}
-
-.faq .faq-container .faq-item h3 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0 30px 0 0;
-  transition: 0.3s;
-  cursor: pointer;
-  display: flex;
-  align-items: flex-start;
-}
-
-.faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
-  padding-right: 5px;
-}
-
-.faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
-}
-
-.faq .faq-container .faq-item .faq-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 0.3s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.faq .faq-container .faq-item .faq-content p {
-  margin-bottom: 0;
-  overflow: hidden;
-}
-
-.faq .faq-container .faq-item .faq-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 16px;
-  line-height: 0;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
-}
-
-.faq .faq-container .faq-active h3 {
-  color: var(--accent-color);
-}
-
-.faq .faq-container .faq-active .faq-content {
-  grid-template-rows: 1fr;
-  visibility: visible;
-  opacity: 1;
-  padding-top: 10px;
-}
-
-.faq .faq-container .faq-active .faq-toggle {
-  transform: rotate(90deg);
-  color: var(--accent-color);
-}
 
 
 /*-------------Color include--------------*/
@@ -211,86 +122,62 @@
   width: 220px;
 }
 .cta {
-  display: flex;
-  padding: 11px 33px;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-  color: white;
-  background: #6225E6;
-  transition: 1s;
-  box-shadow: 6px 6px 0 black;
-  transform: skewX(-15deg);
   border: none;
+  background: none;
+  cursor: pointer;
 }
 
-.cta:focus {
-  outline: none;
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
 }
 
-.cta:hover {
-  transition: 0.5s;
-  box-shadow: 10px 10px 0 #FBC638;
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
 }
 
-.cta .second {
-  transition: 0.5s;
-  margin-right: 0px;
+.cta:hover svg {
+  transform: translateX(0);
 }
 
-.cta:hover  .second {
-  transition: 0.5s;
-  margin-right: 45px;
+.cta:active svg {
+  transform: scale(0.9);
 }
-
-.span {
-  transform: skewX(15deg)
+.line{
+  text-decoration: none;
+  color: inherit; /* Ensure it inherits the text color */
+  cursor: pointer;
 }
-
-.second {
-  width: 20px;
-  margin-left: 30px;
+.hover-underline-animation {
   position: relative;
-  top: 12%;
+  color: #fff;
+  padding-bottom: 20px;
 }
 
-.one {
-  transition: 0.4s;
-  transform: translateX(-60%);
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#arrow-horizontal{
+  color: #ffffff;
+}
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-.two {
-  transition: 0.5s;
-  transform: translateX(-30%);
-}
-
-.cta:hover .three {
-  animation: color_anim 1s infinite 0.2s;
-}
-
-.cta:hover .one {
-  transform: translateX(0%);
-  animation: color_anim 1s infinite 0.6s;
-}
-
-.cta:hover .two {
-  transform: translateX(0%);
-  animation: color_anim 1s infinite 0.4s;
-}
-
-@keyframes color_anim {
-  0% {
-    fill: white;
-  }
-
-  50% {
-    fill: #FBC638;
-  }
-
-  100% {
-    fill: white;
-  }
-}
 /*--
     - Overlay
 ------------------------------------------*/
@@ -6346,7 +6233,7 @@ hr {
   font-size: 16px;
   margin-bottom: 0;
   font-size: 16px;
-  color: #2a2a2a;
+  color: #a69f9f;
 }
 
 /* line 30, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
@@ -6356,7 +6243,7 @@ hr {
 
 /* line 36, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .contact-info .media-body p {
-  color: #8a8a8a;
+  color: #ffffff;
 }
 
 /*=================== contact banner end ====================*/
@@ -6371,6 +6258,7 @@ hr {
 /* line 53, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .form-contact label {
   font-size: 14px;
+  color :white;
 }
 
 /* line 57, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
@@ -6848,20 +6736,32 @@ section {
 .header-csfa{
   color: coral;
 }
-/* line 47, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_extend.scss */
-.header-area .menu-wrapper .main-menu ul ul.submenu, .header-sticky.sticky-bar {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#FF0000+0,FF7878+100 */
-  background: #FF0000;
+/* Default styles */
+.header-area .menu-wrapper .main-menu ul ul.submenu,
+.header-sticky.sticky-bar {
+  /* Background with fade effect */
+  background: rgba(255, 0, 0, 0.5);
   /* Old browsers */
-  background: -moz-linear-gradient(top, #FF0000 0%, #FF7878 100%);
+  background: -moz-linear-gradient(top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 120, 120, 0.5) 50%, rgba(255, 120, 120, 0) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #FF0000 0%, #FF7878 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 120, 120, 0.5) 50%, rgba(255, 120, 120, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #FF0000 0%, #FF7878 100%);
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5) 0%, rgba(255, 120, 120, 0.5) 50%, rgba(255, 120, 120, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF0000', endColorstr='#FF7878',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80FF0000', endColorstr='#00FF7878',GradientType=0 );
   /* IE6-9 */
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header-area .menu-wrapper .main-menu ul ul.submenu,
+  .header-sticky.sticky-bar {
+    background: transparent !important;
+  }
+}
+
+
+
 
 
 
