@@ -40,17 +40,32 @@
             .whatsapp{
                 position: fixed;
                 bottom: 90px;
-                right: 30px; 
+                line-height: 50px;
+                right: 20px; 
+                z-index: 9999; /* High value to ensure it is on top */
             }
              /* Default styles for desktop */
-    .lofo {
-      width: 115px;
-    }
+  .lofo {
+    max-height: 100%; /* Scale the image to fit the container height */
+    max-width: 100%; /* Scale the image to fit the container width */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+.org-logo {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 60px; /* Fixed height for the logo container */
+    max-width: 200px; /* Max width for the logo container */
+}
 
     /* Mobile styles */
     @media (max-width: 768px) {
       .lofo {
-        width: 100px;
+        z-index: 9999;
+        width: 120px; /* Adjust the width as needed */
+                    margin: 0; /* Remove any margin */
+                    padding: 0; /* Remove any padding */
       }
     }
             .footer-icon{
@@ -173,7 +188,10 @@
                                     <h1 data-animation="fadeInLeft" data-delay="0.4s">C S F A </h1>
                                     <span data-animation="fadeInLeft" data-delay="0.1s">Calisthenics Science And Fitness
                                         Academy</span>
-                                    <a href="courses.html" class="border-btn hero-btn" data-animation="fadeInLeft"
+                                        <br>
+                                        <br>
+                                        <br>
+                                    <a href="courses.html" class="border-btn hero-btn pt-10" data-animation="fadeInLeft"
                                         data-delay="0.8s">My Courses</a>
                                 </div>
                             </div>
@@ -890,6 +908,15 @@
     <!-- JS here -->
     
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
     <!-- Jquery, Popper, Bootstrap -->
     <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>

@@ -776,7 +776,7 @@ hr {
   -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-  background: #fff;
+  background: rgba(169, 169, 169, 0.143);
 }
 
 /* Sticky end */
@@ -6737,28 +6737,30 @@ section {
   color: coral;
 }
 /* Default styles */
-.header-area .menu-wrapper .main-menu ul ul.submenu,
-.header-sticky.sticky-bar {
-  /* Background with fade effect */
-  background: rgba(255, 0, 0, 0.5);
-  /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 120, 120, 0.5) 50%, rgba(255, 120, 120, 0) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 120, 120, 0.5) 50%, rgba(255, 120, 120, 0) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5) 0%, rgba(255, 120, 120, 0.5) 50%, rgba(255, 120, 120, 0) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80FF0000', endColorstr='#00FF7878',GradientType=0 );
-  /* IE6-9 */
+@media (max-width: 768px) {
+  .header-area .menu-wrapper .main-menu ul ul.submenu,
+  .header-sticky.sticky-bar {
+      /* Dark black background */
+      background: rgba(0, 0, 0, 0.8); /* Adjust the opacity (last value) as needed */
+
+      /* Gradient fallbacks */
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(55, 55, 55, 0.8) 50%, rgba(55, 55, 55, 0) 100%);
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(55, 55, 55, 0.8) 50%, rgba(55, 55, 55, 0) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(55, 55, 55, 0.8) 50%, rgba(55, 55, 55, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC000000', endColorstr='#00373737', GradientType=0); /* IE9 and below */
+  }
 }
+
 
 /* Mobile styles */
 @media (max-width: 768px) {
   .header-area .menu-wrapper .main-menu ul ul.submenu,
   .header-sticky.sticky-bar {
-    background: transparent !important;
+    /* Dark black background */
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity (last value) as needed */
   }
 }
+
 
 
 
