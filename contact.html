@@ -27,6 +27,28 @@
             bottom: 90px;
             right: 30px; 
         }
+        .lofo {
+    max-height: 100%; /* Scale the image to fit the container height */
+    max-width: 100%; /* Scale the image to fit the container width */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+.org-logo {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 60px; /* Fixed height for the logo container */
+    max-width: 150px; /* Max width for the logo container */
+}
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .lofo {
+        /* z-index: 9999; */
+        width: 120px; /* Adjust the width as needed */
+                   
+      }
+    }
         .footer-icon{
                 box-flex-group: #fff;
                 padding-bottom: 5px;
