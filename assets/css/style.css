@@ -3446,21 +3446,25 @@ hr {
 }
 
 /* line 31, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
+/* Base styles for all devices */
 .slider-area2 {
-  background-image: url(../img/hero/hero2.jpeg);
-  background-repeat: no-repeat;
+  background-image: url(../img/MyPhoto/harshit1.jpeg);
+  background-repeat: no-repeat; /* Ensure the background does not repeat */
   background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
 }
 
-/* line 37, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
-.slider-area {
-  margin-top: -1px;
-  background-image: url(../img/hero/h1_hero.jpeg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
+/* Responsive adjustments for smaller devices */
+@media (max-width: 767px) {
+  .slider-area2 {
+    height: 50vh; /* Adjust the height for smaller screens if needed */
+  }
 }
+
+
+/* line 37, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
 
 /* line 44, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption {
