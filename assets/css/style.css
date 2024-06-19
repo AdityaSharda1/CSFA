@@ -770,7 +770,7 @@ hr {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #000000; /* Solid black background */
+  background-color: rgba(0, 0, 0, 0.8); /* Solid black background */
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   z-index: 9999;
@@ -3348,10 +3348,10 @@ hr {
 }
 
 /* line 163, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_headerMenu.scss */
-.mobile_menu .slicknav_menu {
+/* .mobile_menu .slicknav_menu {
   background: transparent;
   margin-top: 0px !important;
-}
+} */
 
 /* line 166, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_headerMenu.scss */
 .mobile_menu .slicknav_menu .slicknav_btn {
@@ -3360,7 +3360,7 @@ hr {
 
 /* line 169, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_headerMenu.scss */
 .mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
-  background-color: #FF0000 !important;
+  background-color: #fc2424 !important;
 }
 
 /* line 173, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_headerMenu.scss */
