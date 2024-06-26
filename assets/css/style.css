@@ -90,14 +90,14 @@
 /* line 50, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_variables.scss */
 .boxed-btn {
   background: #fff;
-  color: #ea7611 !important;
+  color: #fff;
   display: inline-block;
   padding: 18px 44px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #FF0000;
+  border: 1px solid #FFf;
   letter-spacing: 3px;
   text-align: center;
   color: #FF0000;
@@ -6278,6 +6278,8 @@ hr {
   padding-left: 18px;
   font-size: 13px;
   background: transparent;
+  color: #ffffff;
+  border-radius: 12px;
 }
 
 /* line 69, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
