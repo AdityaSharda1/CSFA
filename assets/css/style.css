@@ -359,7 +359,7 @@ a:hover,
 /* line 83, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 a,
 button {
-  color: #fff;
+  color: #fff !important;
   outline: medium none;
 }
 
