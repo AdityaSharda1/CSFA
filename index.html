@@ -195,6 +195,71 @@
             background-position: center center;
         }
         }
+
+        #page2 {
+    width: 100%;
+    background-color: #000000;
+    padding: 8vw 0;
+    position: relative;
+}
+
+#moving-text {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #moving-text::-webkit-scrollbar {
+        display: none;
+    }
+
+    .con {
+        white-space: nowrap;
+        display: inline-block;
+        animation-name: move;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    #moving-text h1 {
+        font-size: 15vw;
+        /* background-color: lightblue; */
+        display: inline-block;
+    }
+
+    #gola {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #FE320A;
+        margin: 2vw 2vw;
+    }
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+video {
+        position: relative;
+        border-radius: 15px;
+        margin-top: 4vw;
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
+        width: 92%;
+        margin-left: 4%;
+    }
+
+
+
+
     </style>
 </head>
 
@@ -301,9 +366,37 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <div id="page2">
+            <div id="moving-text">
+                <div class="con">
+                    <h1>EXPERIENCES</h1>
+                    <div id="gola"></div>
+                    <h1>CONTENT</h1>
+                    <div id="gola"></div>
+                    <h1>ENVIRONMENTS</h1>
+                    <div id="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>EXPERIENCES</h1>
+                    <div id="gola"></div>
+                    <h1>CONTENT</h1>
+                    <div id="gola"></div>
+                    <h1>ENVIRONMENTS</h1>
+                    <div id="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>EXPERIENCES</h1>
+                    <div id="gola"></div>
+                    <h1>CONTENT</h1>
+                    <div id="gola"></div>
+                    <h1>ENVIRONMENTS</h1>
+                    <div id="gola"></div>
+                </div>
+            </div>     
+        </div>
         
         
-
+        <video autoplay loop muted src="./video.mp4"></video>ß
         <!-- slider Area End-->
         <!-- Traning categories Start -->
         <!-- <section class="traning-categories white-bg">
