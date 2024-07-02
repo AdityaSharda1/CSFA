@@ -44,7 +44,66 @@
             right: 20px;
             z-index: 9999;
         }
+        nav {
+    padding: 2vw 0vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+}
 
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4 {
+    padding: 10px 20px;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#nav-part2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 119, 119);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#nav-part2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h4 a {
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#nav-part2 h4:hover a {
+    color: #fff;
+}
+
+nav h3 {
+    display: none;
+}
         .lofo {
             max-height: 100%;
             max-width: 100%;
@@ -298,13 +357,13 @@ video {
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav>
-                                <ul id="navigation">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="courses.html">Courses</a></li>
-                                    <li><a href="workshop.html">Workshop</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
+                                <div id="nav-part2">
+                                    <h4><a href="index.html">Home</a></h4>
+                                    <h4><a href="about.html">About</a></h4>
+                                    <h4><a href="courses.html">Courses</a></h4>
+                                    <h4><a href="workshop.html">Workshop</a></h4>
+                                    <h4><a href="contact.html">Contact</a></h4>
+                                </div>
                             </nav>
                         </div>
                         <!-- Mobile Menu -->

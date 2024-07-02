@@ -3452,8 +3452,19 @@ hr {
   background-repeat: no-repeat; /* Ensure the background does not repeat */
   background-size: cover;
   background-position: center center;
+  position: relative; /* Ensure the overlay can be positioned absolutely */
   width: 100%;
   height: 100vh;
+}
+
+.slider-area2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Light black transparent overlay */
 }
 
 /* Responsive adjustments for smaller devices */
@@ -3462,6 +3473,7 @@ hr {
     height: 50vh; /* Adjust the height for smaller screens if needed */
   }
 }
+
 
 
 /* line 37, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
