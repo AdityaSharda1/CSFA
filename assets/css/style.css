@@ -51,6 +51,15 @@
   z-index: 9;
   transition: all linear 0.4s;
 }
+
+/* Hide cursor on mobile */
+@media (max-width: 768px) {
+  #cursor,
+  #cursor-blur {
+    display: none;
+  }
+}
+
 /* line 33, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_color.scss */
 .gray-bg {
   background: #f5f5f5;

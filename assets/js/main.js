@@ -1,26 +1,45 @@
 var crsr = document.querySelector("#cursor");
 var blur = document.querySelector("#cursor-blur");
 
-document.addEventListener("mousemove", function (dets) {
+function updateCursor(dets) {
   crsr.style.left = dets.x + "px";
   crsr.style.top = dets.y + "px";
   blur.style.left = dets.x - 250 + "px";
   blur.style.top = dets.y - 250 + "px";
+}
+
+function handleMouseEnter() {
+  crsr.style.scale = 3;
+  crsr.style.border = "1px solid #fff";
+  crsr.style.backgroundColor = "transparent";
+}
+
+function handleMouseLeave() {
+  crsr.style.scale = 1;
+  crsr.style.border = "0px solid #95C11E";
+  crsr.style.backgroundColor = "#95C11E";
+}
+
+document.addEventListener("mousemove", function (dets) {
+  if (window.innerWidth > 768) {
+    updateCursor(dets);
+  }
 });
 
 var h4all = document.querySelectorAll("#nav h4");
 h4all.forEach(function (elem) {
   elem.addEventListener("mouseenter", function () {
-    crsr.style.scale = 3;
-    crsr.style.border = "1px solid #fff";
-    crsr.style.backgroundColor = "transparent";
+    if (window.innerWidth > 768) {
+      handleMouseEnter();
+    }
   });
   elem.addEventListener("mouseleave", function () {
-    crsr.style.scale = 1;
-    crsr.style.border = "0px solid #95C11E";
-    crsr.style.backgroundColor = "#95C11E";
+    if (window.innerWidth > 768) {
+      handleMouseLeave();
+    }
   });
 });
+
 (function ($)
   { "use strict"
   
