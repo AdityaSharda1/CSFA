@@ -350,22 +350,70 @@ video {
     }
 
 
+    #loader{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#loader h1{
+    font-size: 4vw;
+    color: transparent;
+    background: linear-gradient(to right,orange,orangered);
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media (max-width:600px) {
+    #loader h1{
+        font-size: 9vw;
+      
+    }
+}
 
     </style>
 </head>
 
-<body class="black-bg">
+<body>
+    
     <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
-                </div>
-            </div>
-        </div>
+    <div id="loader">
+        <h1>ENVIRONMENTS</h1>
+        <h1>EXPERIENCES</h1>
+        <h1>CONTENT</h1>
     </div>
     <!-- Preloader End -->
     <!-- Whatsapp -->
@@ -401,8 +449,6 @@ video {
                                 </ul>
                             </nav>
                         </div>
-                        <div id="cursor"></div>
-                        <div id="cursor-blur"></div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -493,92 +539,6 @@ video {
         
         
         <video autoplay loop muted src="./video.mp4"></video>ß
-        <!-- slider Area End-->
-        <!-- Traning categories Start -->
-        <!-- <section class="traning-categories white-bg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="single-topic text-center mb-30">
-                        <div class="topic-img">
-                            <img src="assets/img/gallery/cat1.png" alt="">
-                            <div class="topic-content-box">
-                                <div class="topic-content">
-                                    <h3>Personal traning</h3>
-                                    <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
-                                    <a href="courses.html" class="border-btn">View Courses</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="single-topic text-center mb-30">
-                        <div class="topic-img">
-                            <img src="assets/img/gallery/cat2.png" alt="">
-                            <div class="topic-content-box">
-                                <div class="topic-content">
-                                    <h3>Group traning</h3>
-                                    <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
-                                    <a href="courses.html" class="btn">View Courses</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-        <!-- Traning categories End-->
-        <!--? Team -->
-        <!-- <section class="team-area fix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section-tittle text-center wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay=".1s">
-                            <h2>What We Offer</h2>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team1.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Body Building</a></h5>
-                            <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team2.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Muscle Gain</a></h5>
-                            <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team3.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Weight Loss</a></h5>
-                            <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            </div>
-        </section>
         <!--? About Area-2 Start -->
         <section class="about-area2 fix pb-padding pt-5 pb-10">
             <div class="support-wrapper align-items-center">
@@ -713,289 +673,6 @@ video {
                 </div>
                 </div>
         </section>
-        <!-- <section class="why-certify">
-            <h2>Why Get Certified?</h2>
-            <ul>
-                <li>Enhance your professional credentials</li>
-                <li>Increase your earning potential</li>
-                <li>Gain advanced knowledge in calisthenics</li>
-                <li>Stand out in the fitness industry</li>
-            </ul>
-        </section> -->
-
-        <!-- <section class="testimonials" id="testimonials">
-            <h2>Certified Trainers’ Success Stories</h2>
-            <p>Hear from trainers who have boosted their careers with our certification programs.</p>
-        </section>
-
-        <section class="how-it-works">
-            <h2>How It Works</h2>
-            <ol>
-                <li>Sign up for the certification program.</li>
-                <li>Complete the course and training sessions.</li>
-                <li>Pass the certification exam.</li>
-                <li>Receive your certification and elevate your career.</li>
-            </ol>
-        </section>
-        <section class="call-to-action">
-            <h2>Ready to Elevate Your Career?</h2>
-            <button onclick="scrollToSection('contact')">Enroll Now</button>
-        </section> -->
-        <!-- Services End -->
-        <!--? Gallery Area Start -->
-        <!-- <div class="gallery-area section-padding30 ">
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery1.png);"></div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3>Muscle gaining </h3>
-                                <a href="gallery.html"><i class="ti-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery2.png);"></div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3>Muscle gaining </h3>
-                                <a href="gallery.html"><i class="ti-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery3.png);"></div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3>Muscle gaining </h3>
-                                <a href="gallery.html"><i class="ti-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery4.png);"></div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3>Muscle gaining </h3>
-                                <a href="gallery.html"><i class="ti-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery5.png);"></div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3>Muscle gaining </h3>
-                                <a href="gallery.html"><i class="ti-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery6.png);"></div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3>Muscle gaining </h3>
-                                <a href="gallery.html"><i class="ti-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-        <!-- Gallery Area End -->
-        <!-- Courses area start -->
-        <!-- <section class="pricing-area section-padding40 fix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="2s"
-                            data-wow-delay=".1s">
-                            <h2>Pricing</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row"> -->
-                    <!-- <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                            <div class="properties__card">
-                                <div class="about-icon">
-                                    <img src="assets/img/icon/price.svg" alt="">
-                                </div>
-                                <div class="properties__caption">
-                                    <span class="month">6 month</span>
-                                    <p class="mb-25">$30/m <span>(Single class)</span></p>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Free riding </p>
-                                        </div>
-                                    </div>
-                                    gdufguagghuagreugigraweiurc irgig iawgiwgri
-                                    fiuwy iagiua wtt ww w
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Unlimited equipments</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Personal trainer</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Weight losing classes</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features mb-20">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Month to mouth</p>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="border-btn border-btn2">Join Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                            <div class="properties__card">
-                                <div class="about-icon">
-                                    <img src="assets/img/icon/price.svg" alt="">
-                                </div>
-                                <div class="properties__caption">
-                                    <span class="month">6 month</span>
-                                    <p class="mb-25">$30/m <span>(Single class)</span></p>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Free riding </p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Unlimited equipments</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Personal trainer</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Weight losing classes</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features mb-20">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Month to mouth</p>
-                                        </div>
-                                    </div>
-                                    <a href="courses.html" class="border-btn border-btn2">Join Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                            <div class="properties__card">
-                                <div class="about-icon">
-                                    <img src="assets/img/icon/price.svg" alt="">
-                                </div>
-                                <div class="properties__caption">
-                                    <span class="month">6 month</span>
-                                    <p class="mb-25">$30/m <span>(Single class)</span></p>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Free riding </p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Unlimited equipments</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Personal trainer</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Weight losing classes</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-features mb-20">
-                                        <div class="features-icon">
-                                            <img src="assets/img/icon/check.svg" alt="">
-                                        </div>
-                                        <div class="features-caption">
-                                            <p>Month to mouth</p>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="border-btn border-btn2">Join Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-        <!-- Courses area End -->
         <!--? About Area-2 Start -->
         <section class="about-area2 fix pb-padding pt-50 pb-80">
             <div class="support-wrapper align-items-center">
@@ -1022,62 +699,6 @@ video {
                 </div>
             </div>
         </section>
-        <!-- About Area End -->
-        <!--? Blog Area Start -->
-        <!-- <section class="home-blog-area pt-10 pb-50">
-        <div class="container">
-            <!-- Section Tittle -->
-        <!-- <div class="row justify-content-center">
-                <div class="col-lg-7 col-md-9 col-sm-10">
-                    <div class="section-tittle text-center mb-100 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                        <h2>From Blog</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="assets/img/gallery/blog1.png" alt="">
-                            </div>
-                            <div class="blog-cap">
-                                <span>Gym & Fitness</span>
-                                <h3><a href="blog_details.html">Your Antibiotic One Day To 10 Day Options</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="assets/img/gallery/blog2.png" alt="">
-                            </div>
-                            <div class="blog-cap">
-                                <span>Gym & Fitness</span>
-                                <h3><a href="blog_details.html">Your Antibiotic One Day To 10 Day Options</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-        <!-- Blog Area End -->
-        <!--? video_start -->
-        <!-- <div class="video-area section-bg2 d-flex align-items-center" data-background="assets/img/gallery/video-bg.png">
-            <div class="container">
-                <div class="video-wrap position-relative">
-                    <div class="video-icon">
-                        <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i
-                                class="fas fa-play"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- video_end -->
-        <!-- ? services-area -->
         <section class="services-area">
             <div class="container">
                 <div class="row justify-content-between">
@@ -1199,7 +820,8 @@ video {
     
     <!-- JS here -->
     
-    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js">
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

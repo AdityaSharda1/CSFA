@@ -1,5 +1,13 @@
-var crsr = document.querySelector("#cursor");
-var blur = document.querySelector("#cursor-blur");
+
+function loaderAnimation() {
+  var loader = document.querySelector("#loader")
+  setTimeout(function () {
+      loader.style.top = "-100%"
+  }, 4200)
+}
+
+
+loaderAnimation()
 
 function updateCursor(dets) {
   crsr.style.left = dets.x + "px";
