@@ -3,7 +3,7 @@
  * (c) 2016 Josh Cope
  * licensed under MIT
  */
-.slicknav_btn {
+/* .slicknav_btn {
   position: relative;
   display: block;
   vertical-align: middle;
@@ -104,7 +104,7 @@
   .slicknav_nav .slicknav_row {
     
     /* padding: 5px 10px; */
-    margin: 2px 5px; 
+    /* margin: 2px 5px; 
   }
     .slicknav_nav .slicknav_row:hover {
       -webkit-border-radius: 6px;
@@ -139,11 +139,11 @@
   padding: 7px 12px;
   height: 44px; }
 
-
+ */
 
   /*===== mobile menu slicknav =====*/
 
-.mobile_menu {
+/* .mobile_menu {
 	position: absolute;
 	right: 10px;
 	width: 96%;
@@ -198,12 +198,16 @@
     background: #fff !important;
 }
 .slicknav_nav {
-	background: #ffb5b0;
+	background: transparent;
+  width: 300px;
+  height: 600px;
+  Display: flex;
+  justify-content: end;
+  box-shadow: 30px 50px 100px #85888C;
 	float: right;
 	margin-top: 11px;
 	padding: 19px;
 	width: 100%;
-	border-bottom: 1px solid #eee;
 }
 .slicknav_nav a:hover {
     background: #F79960 none repeat scroll 0 0;
@@ -224,7 +228,7 @@
 
 .slicknav_nav .slicknav_row:hover,
 .slicknav_nav .slicknav_row:hover .slicknav_arrow {
-    border-radius: 0;
+    border-radius: 10;
     background-color: #F79960;
     background-color: transparent;
     color: #000;
@@ -259,4 +263,4 @@
 .slicknav_menu .slicknav_nav a:hover {
 	background: transparent;
 	color: #dca73a;
-}
+} */ 
