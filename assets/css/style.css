@@ -7826,7 +7826,7 @@ del {
 }
 
 .custom-navbar {
-  background-color: #1d1f1d;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 0 20px;
   height: 50px;
   display: flex;
