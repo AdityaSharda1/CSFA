@@ -8,23 +8,61 @@ function toggleMobileMenu(icon) {
   }
   
 
+
+  gsap.registerPlugin(ScrollTrigger);
+
+const uniquePageContainer = document.querySelector(".unique-container");
+
+/* SMOOTH SCROLL */
+const uniqueScroller = new LocomotiveScroll({
+  el: uniquePageContainer,
+  smooth: true
+});
+
+uniqueScroller.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy(uniquePageContainer, {
+  scrollTop(value) {
+    return arguments.length
+      ? uniqueScroller.scrollTo(value, 0, 0)
+      : uniqueScroller.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {
+      left: 0,
+      top: 0,
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  },
+  pinType: uniquePageContainer.style.transform ? "transform" : "fixed"
+});
+
+window.addEventListener("load", function () {
+  let pinBoxes = document.querySelectorAll(".unique-pin-wrap > *");
+  let pinWrap = document.querySelector(".unique-pin-wrap");
+  let pinWrapWidth = pinWrap.offsetWidth;
+  let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+
+  // Pinning and horizontal scrolling
+  gsap.to(".unique-pin-wrap", {
+    scrollTrigger: {
+      scroller: uniquePageContainer, //locomotive-scroll
+      scrub: true,
+      trigger: "#unique-sectionPin",
+      pin: true,
+      start: "top top",
+      end: pinWrapWidth
+    },
+    x: -horizontalScrollLength,
+    ease: "none"
+  });
+
+  ScrollTrigger.addEventListener("refresh", () => uniqueScroller.update()); //locomotive-scroll
+  ScrollTrigger.refresh();
+});
+
+
   // testimonials
 
-  var swiper = new Swiper(".c-testimonials", {
-    spaceBetween: 30,
-    effect: "fade",
-    loop: true,
-    mousewheel: {
-      invert: false
-    },
-    // autoHeight: true,
-    pagination: {
-      el: ".c-testimonials__pagination",
-      clickable: true
-    },
-    navigation: {
-      nextEl: ".c-testimonials__arrow-next",
-      prevEl: ".c-testimonials__arrow-prev"
-    }
-  });
   

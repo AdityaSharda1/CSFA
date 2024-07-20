@@ -13,7 +13,12 @@
 
     <!-- CSS here -->
     <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
@@ -473,6 +478,56 @@
 
 
         <video autoplay loop muted src="./video.mp4"></video>ß
+
+        <div class="bg-dark">
+            <div class="container px-vw-5 py-vh-5">
+              <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
+                  <span class="h5 text-secondary">What we do</span>
+                  <h2 class="display-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h2>
+                </div>
+                <div class="col-12 col-lg-5" data-aos="fade-left">
+                  <h3 class="pt-5">Product Design & Strategy</h3>
+                  <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
+                    <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+          </svg>
+          </p>
+                  <h3 class="border-top border-secondary pt-5 mt-5">Development & Engineering</h3>
+                  <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
+                    <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+          </svg>
+          </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="unique-container">
+            <section data-bgcolor="#bcb8ad" data-textcolor="#032f35">
+              <div>
+                <h1 data-scroll data-scroll-speed="1"><span>Horizontal</span> <span>scroll</span> <span>section</span></h1>
+                <p data-scroll data-scroll-speed="2" data-scroll-delay="0.2">with GSAP ScrollTrigger & Locomotive Scroll</p>
+              </div>
+            </section>
+        
+            <section id="unique-sectionPin">
+              <div class="unique-pin-wrap">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                <img src="https://images.pexels.com/photos/5207262/pexels-photo-5207262.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900" alt="">
+                <img src="https://images.pexels.com/photos/3371358/pexels-photo-3371358.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900" alt="">
+                <img src="https://images.pexels.com/photos/3618545/pexels-photo-3618545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900" alt="">
+              </div>
+            </section>
+        
+            <section data-bgcolor="#e3857a" data-textcolor="#f1dba7">
+              <img src="https://images.pexels.com/photos/4791474/pexels-photo-4791474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              <h2 data-scroll data-scroll-speed="1" class="unique-credit"><a href="https://thisisadvantage.com" target="_blank">Made by Advantage</a></h2>
+            </section>
+          </div>
           
         <!--? About Area-2 Start -->
         <section class="about-area2 fix pb-padding pt-5 pb-10">
@@ -510,12 +565,6 @@
             </div>
         </section>
         <!-- About Area End -->
-        <!-- <section class="courses" id="courses"> -->
-        <!-- <h2>Our Certification Programs</h2>
-            <div class="course">
-                <h3>Calisthenics Trainer Certification</h3>
-                <p>Designed for gym trainers looking to specialize in calisthenics and increase their marketability.</p>
-            </div> -->
         <section class="about-area2 fix pb-padding pt-10 pb-10">
             <div class="support-wrapper align-items-center">
                 <div class="right-content2">
