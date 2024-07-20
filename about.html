@@ -37,6 +37,40 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <style>
+        .main-heading:hover {
+    color: #ff6347; /* Change text color on hover */
+    text-decoration-color: #ff6347; /* Change underline color on hover */
+  }
+        .main-heading{
+            font-size: 50px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between subheading and text */
+    display: block; /* Ensure the subheading is on its own line */
+    transition: color 0.3s ease, text-decoration-color 0.3s ease; /* Smooth transition for hover effects */
+    background: rgb(94,87,87);
+    background: linear-gradient(318deg, rgba(94,87,87,1) 1%, rgba(0,0,0,1) 64%); 
+        }
+
+     .subheading {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px; /* Space between subheading and text */
+    display: block; /* Ensure the subheading is on its own line */
+    transition: color 0.3s ease, text-decoration-color 0.3s ease; /* Smooth transition for hover effects */
+  }
+
+  .subheading:hover {
+    color: #ff6347; /* Change text color on hover */
+    text-decoration-color: #ff6347; /* Change underline color on hover */
+  }
+
+  .content {
+    margin-bottom: 20px; /* Space between paragraphs */
+    padding-left: 10px; /* Optional: Indent the paragraph text for a cleaner look */
+  }
         .whatsapp {
             position: fixed;
             bottom: 90px;
@@ -44,66 +78,6 @@
             right: 20px;
             z-index: 9999;
         }
-        nav {
-    padding: 2vw 0vw;
-    width: 100%;
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 100;
-    justify-content: space-between;
-}
-
-#nav-part2 {
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-}
-
-#nav-part2 h4 {
-    padding: 10px 20px;
-    border: 1px solid #0000003c;
-    border-radius: 50px;
-    font-weight: 500;
-    color: #000000bb;
-    transition: all ease 0.4s;
-    position: relative;
-    font-size: 18px;
-    overflow: hidden;
-}
-
-#nav-part2 h4::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(255, 119, 119);
-    left: 0;
-    bottom: -100%;
-    border-radius: 50%;
-    transition: all ease 0.4s;
-}
-
-#nav-part2 h4:hover::after {
-    bottom: 0;
-    border-radius: 0;
-}
-
-#nav-part2 h4 a {
-    color: #000000bb;
-    text-decoration: none;
-    position: relative;
-    z-index: 9;
-}
-
-#nav-part2 h4:hover a {
-    color: #fff;
-}
-
-nav h3 {
-    display: none;
-}
         .lofo {
             max-height: 100%;
             max-width: 100%;
@@ -316,7 +290,10 @@ video {
         margin-left: 4%;
     }
 
-
+  .logo-img{
+    padding: 10px;
+    
+  }
 
 
     </style>
@@ -342,42 +319,32 @@ video {
         </a>
     </div>
     <!-- Header -->
-    <header>
-        <!-- Header Start -->
-        <div class="header-area header-transparent">
-            <div class="main-header header-sticky">
-                <div class="container-fluid">
-                    <div class="menu-wrapper d-flex align-items-center justify-content-between">
-                        <!-- Logo -->
-                        <div class="org-logo">
-                            <a href="index.html">
-                                <img src="assets/img/logo/lofo.png" class="lofo">
-                            </a>
-                        </div>
-                        <!-- Main-menu -->
-                        <div class="main-menu f-right d-none d-lg-block">
-                            <nav>
-                                <ul id="navigation">
-                                    <div id="nav-part2">
-                                        <h4><a href="index.html">Home</a></h4>
-                                        <h4><a href="about.html">About</a></h4>
-                                        <h4><a href="courses.html">Courses</a></h4>
-                                        <h4><a href="workshop.html">Workshop</a></h4>
-                                        <h4><a href="contact.html">Contact</a></h4>
-                                    </div>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <header class="custom-navbar">
+        <div id="custom-brand"><a href="index.html"><img class="logo-img" style="width: 10vh;" src="assets/img/logo/logo0.png"></a></div>
+        <nav class="custom-nav">
+            <ul class="custom-nav-list">
+                <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="index.html">Home</a></li>
+                <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="about.html">About</a></li>
+                <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="courses.html">Courses</a></li>
+                <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="workshop.html">Workshop</a></li>
+                <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="custom-hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="custom-bar1"></div>
+            <div class="custom-bar2"></div>
+            <div class="custom-bar3"></div>
+            <ul class="custom-mobile-menu">
+                <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="index.html">Home</a></li>
+                <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="about.html">About</a></li>
+                <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="courses.html">Courses</a></li>
+                <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="workshop.html">Workshop</a></li>
+                <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="contact.html">Contact</a></li>
+                <!-- <li style="font-size: 40px;" id="custom-login"><a href="/login">Login</a></li>
+                <li style="font-size: 40px;" id="custom-signup"><a href="/signup">Signup</a></li> -->
+            </ul>
         </div>
-    <!-- Header End -->
-</header>
+    </header>
 <main>
     <!--? Hero Start -->
     <div class="slider-area2">
@@ -462,6 +429,15 @@ video {
     </section>
     <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
         <div class="front-text">
+            <h2 class="main-heading pt-10 pb-10">Our Certification Programs</h2>
+            <p>Designed for gym trainers looking to specialize in calisthenics and increase their
+                marketability.</p>
+                <br>
+                <br>
+                <hr>
+                <br>
+    <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+        <div class="front-text">
             <h2 style="padding-left: 15px; margin: 10px;">Our Mission</h2>
             <p style="padding-left: 15px; margin-left: 20px;">
                 We aim to create a global community of skilled, confident calisthenics trainers who can inspire and lead others to achieve their fitness goals. Through our innovative certification programs, we strive to:
@@ -482,9 +458,9 @@ video {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                         <div class="footer-icon-container1">
-                        <div class="footer-icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
+                            <div class="footer-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -494,29 +470,35 @@ video {
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                       <div class="footer-icon-container2">
-                        <div class="footer-icon">
-                            <i class="fa-sharp fa-solid fa-phone"></i>
-                        </div>
+                        <div class="footer-icon-container2">
+                            <div class="footer-icon">
+                                <i class="fa-sharp fa-solid fa-phone"></i>
+                            </div>
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
-                            <span><a href="tel:+91 9654260660"><p>+91 9654260660</a></p></span>
-                            <span><a href="tel:+91 9315275409"><p>+91 9315275409</a></p></span>
+                            <span><a href="tel:+91 9654260660">
+                                    <p>+91 9654260660
+                                </a></p></span>
+                            <!-- <span><a href="tel:+91 9315275409"><p>+91 9315275409</a></p></span> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
                         <div class="footer-icon-container3">
-                        <div class="footer-icon">
-                           <i class="fa-regular fa-envelope"></i>
-                        </div>
+                            <div class="footer-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>
-                            <span><a href="mailto: csfa.certifications@gmail.com"><p>csfa.certifinations@gmail.com</p></a></span>
-                            <span><a href="mailto: csfa.certifications@gmail.com"><p>csfa.fitness@gmail.com</p></a></span>
+                            <span><a href="mailto: csfa.certifications@gmail.com">
+                                    <p>csfa.certifinations@gmail.com</p>
+                                </a></span>
+                            <span><a href="mailto: csfa.certifications@gmail.com">
+                                    <p>csfa.fitness@gmail.com</p>
+                                </a></span>
                         </div>
                     </div>
                 </div>
@@ -534,70 +516,126 @@ video {
                     <div class="col-xl-12">
                         <div class="single-footer-caption mb-50 text-center">
                             <!-- logo -->
-                            <div class="org-logo">
+                            <div class="org1-logo">
                                 <a href="index.html">
-                                    <img src="assets/img/logo/lofo.png" width="155">
-                                </a> 
+                                    <img src="assets/img/logo/lofo.png" width="185">
+                                </a>
                             </div>
                             <!-- Menu -->
                             <!-- Header Start -->
-                            <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                                <div class="main-header main-header2">
+                            <!-- <div class="header1-area main-header2111 wow fadeInUp" data-wow-duration="2s"
+                                data-wow-delay=".4s">
+                                <div class="main-header11 main-header211">
                                     <div class="menu-wrapper menu-wrapper2">
                                         <!-- Main-menu -->
-                                        <div class="main-menu main-menu2 text-center">
+                                        <!-- <div class="main-menu main-menu2 text-center">
                                             <nav>
                                                 <ul>
-                                                    <li><a href="index.html">Home</a></li>
+                                                    <!-- <li><a href="index.html">Home</a></li>
                                                     <li><a href="about.html">About</a></li>
                                                     <li><a href="courses.html">Courses</a></li>
                                                     <li><a href="workshop.html">Workshop</a></li>
-                                                    <!-- <li><a href="pricing.html">Pricing</a></li>
+                                                     <li><a href="pricing.html">Pricing</a></li>
                                                     <li><a href="gallery.html">Gallery</a></li> -->
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                </ul>
+                                                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                                                <!-- </ul>
                                             </nav>
-                                        </div>   
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Header End -->
                             <!-- social -->
-                            <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/csfa_certifications/"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="2s"
+                                data-wow-delay=".8s">
+                                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                                <!-- <a href=""><i
+                                        class="fa-brands fa-instagram"></i></a> -->
+                                <!-- <a href="#"><i class="fab fa-pinterest-p"></i></a> -->
+                                <div class="tooltip-container">
+                                    <div class="tooltip">
+                                      <div class="profile-insta">
+                                        <div class="user">
+                                          <div class="img-insta">Ui</div>
+                                          <div class="details">
+                                            <div class="name">CSFA</div>
+                                            <div class="username">@csfa_certifications</div>
+                                          </div>
+                                        </div>
+                                        <div class="about">800+ Followers</div>
+                                      </div>
+                                    </div>
+                                    <div class="text">
+                                      <a class="icon" href="https://www.instagram.com/csfa_certifications/">
+                                        <div class="layer">
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          <span class="instagramSVG">
+                                            <svg
+                                              fill="white"
+                                              class="svgIcon"
+                                              viewBox="0 0 448 512"
+                                              height="1.5em"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                              ></path>
+                                            </svg>
+                                          </span>
+                                        </div>
+                                        <div class="text">Instagram</div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Footer Bottom -->
+
             <div class="footer-bottom">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-12">
                         <div class="footer-copy-right text-center">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                              <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://adityashardaportfolio.netlify.app/" target="_blank">AdityaSharda</a> -->
-                              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                              <p>© 2024 CSFA – Calisthenics & Fitness Academy. All rights reserved.</p>
-                              <a href="about.html"><p>Learn more about CSFA</p></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- Footer End-->
-  </footer>
-  <!-- Scroll Up -->
-  <div id="back-top" >
+                                <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://adityashardaportfolio.netlify.app/" target="_blank">AdityaSharda</a> -->
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                            <p>© 2024 CSFA – Calisthenics & Fitness Academy. All rights reserved.</p>
+                            <a href="about.html">
+                                <p>Learn more about CSFA</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+</footer>
+<!-- Scroll Up -->
+<!-- <div id="back-top">
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-</div>
+</div> -->
 
 <!-- JS here -->
 
-<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js">
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 <!-- Jquery, Popper, Bootstrap -->
 <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
 <script src="./assets/js/popper.min.js"></script>
@@ -627,14 +665,15 @@ video {
 
 <!-- contact js -->
 <script src="./assets/js/contact.js"></script>
-<script src="./assets/js/jquery.form.js"></script>
 <script src="./assets/js/jquery.validate.min.js"></script>
 <script src="./assets/js/mail-script.js"></script>
 <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
-<!-- Jquery Plugins, main Jquery -->	
+<!-- Jquery Plugins, main Jquery -->
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+<script src="index.js"></script>
 
 </body>
+
 </html>

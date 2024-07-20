@@ -35,53 +35,37 @@
   </div>
 </div>
 <!-- Preloader Start -->
-<header>
-  <!-- Header Start -->
-  <div class="header-area header-transparent">
-    <div class="main-header header-sticky">
-      <div class="container-fluid">
-        <div class="menu-wrapper d-flex align-items-center justify-content-between">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-          </div>
-          <!-- Main-menu -->
-          <div class="main-menu f-right d-none d-lg-block">
-            <nav>
-              <ul id="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="blog.html">Blog</a>
-                  <ul class="submenu">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog_details.html">Blog Details</a></li>
-                    <li><a href="elements.html">Elements</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div>          
-          <!-- Header-btn -->
-          <div class="header-btns d-none d-lg-block f-right">
-           <a href="contact.html" class="btn">Contact me</a>
-         </div>
-         <!-- Mobile Menu -->
-         <div class="col-12">
-          <div class="mobile_menu d-block d-lg-none"></div>
-        </div>
-      </div>
-    </div>
+<header class="custom-navbar">
+  <div id="custom-brand"><a href="index.html"><img style="width: 10vh;" src="assets/img/logo/lofo.png"></a></div>
+  <nav class="custom-nav">
+      <ul class="custom-nav-list">
+          <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="index.html">Home</a></li>
+          <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="about.html">About</a></li>
+          <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="courses.html">Courses</a></li>
+          <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="workshop.html">Workshop</a></li>
+          <li><a style="font-size: 20px; font-family: Oswald, sans-serif;" href="contact.html">Contact</a></li>
+          <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="blog.html">Blog</a></li>
+      </ul>
+  </nav>
+  <div id="custom-hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="custom-bar1"></div>
+      <div class="custom-bar2"></div>
+      <div class="custom-bar3"></div>
+      <ul class="custom-mobile-menu">
+          <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="index.html">Home</a></li>
+          <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="about.html">About</a></li>
+          <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="courses.html">Courses</a></li>
+          <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="workshop.html">Workshop</a></li>
+          <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="contact.html">Contact</a></li>
+          <li><a style="font-size: 40px; font-family: Oswald, sans-serif;" href="blog.html">Blog</a></li>
+          <!-- <li style="font-size: 40px;" id="custom-login"><a href="/login">Login</a></li>
+          <li style="font-size: 40px;" id="custom-signup"><a href="/signup">Signup</a></li> -->
+      </ul>
   </div>
-</div>
-<!-- Header End -->
 </header>
 <main>
   <!--? Hero Start -->
-  <div class="slider-area2">
+  <!-- <div class="slider-area2">
     <div class="slider-height2 d-flex align-items-center">
       <div class="container">
         <div class="row">
@@ -93,7 +77,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Hero End -->
   <!--? Blog Area Start -->
   <section class="blog_area single-post-area section-padding">
@@ -660,6 +644,7 @@ class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end al
 <!-- Jquery Plugins, main Jquery -->	
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+<script src="index.js"></script>
 
 </body>
 </html>
