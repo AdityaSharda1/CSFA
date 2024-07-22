@@ -65,4 +65,12 @@ window.addEventListener("load", function () {
 
   // testimonials
 
-  
+
+
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {}
+    }
+  }
+

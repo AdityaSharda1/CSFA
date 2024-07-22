@@ -2783,8 +2783,7 @@ hr {
 
 /* line 767, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 .section-padding30 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -3242,7 +3241,7 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Light black transparent overlay */
+  background-color: rgba(0, 0, 0, 0.1); /* Light black transparent overlay */
 }
 
 /* Responsive adjustments for smaller devices */
@@ -4094,14 +4093,30 @@ hr {
 /* line 3, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_about.scss */
 .about-area2 .support-wrapper {
   display: flex;
-  justify-content: start;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-}
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  
 
+}
+.background-box-wallpaper{
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  background-image: linear-gradient(
+    32deg,
+    rgba(8, 8, 8, 0.74) 30px,
+    transparent
+  );
+  background-size: 60px 60px;
+  background-position: -5px -5px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* line 3, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_about.scss */
   .about-area2 .support-wrapper {
     display: block;
+    padding-bottom: 50px;
   }
 }
 
@@ -4178,7 +4193,7 @@ hr {
 /* line 52, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_about.scss */
 .about-area2 .support-wrapper .right-content2 {
   width: 40%;
-  margin-left: 100px;
+  margin-left: 0px;
   position: relative;
 }
 
@@ -4194,7 +4209,7 @@ hr {
   /* line 52, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_about.scss */
   .about-area2 .support-wrapper .right-content2 {
     width: 78%;
-    margin-left: 119px;
+    margin-left: 19px;
     padding-top: 50px;
   }
 }
@@ -6643,48 +6658,6 @@ button {
   cursor: pointer;
 }
 
-section {
-  padding: 50px 20px;
-  
-  background-color: black; /* Black background color */
-}
-
-.course {
-  margin: 20px 0;
-}
-
-.testimonials p {
-  color: white;
-}
-
-.call-to-action button {
-  background: #FF0000; /* Red button color */
-}
-
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-h3, p {
-  color: white;
-}
-
-section {
-  padding: 50px 20px;
-  
-  background-color: black; /* Black background color */
-}
-
-.course {
-  margin: 20px 0;
-}
-
-.testimonials p {
-  color: white;
-}
-
 /* line 13, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_extend.scss */
 .overlay::before {
   background-image: -moz-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, black 100%);
@@ -6698,6 +6671,19 @@ section {
 
 
 
+.background-container-what-we-do{
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  background-image: linear-gradient(
+    32deg,
+    rgba(8, 8, 8, 0.74) 30px,
+    transparent
+  );
+  background-size: 60px 60px;
+  background-position: -5px -5px;
+
+}
 
 
 
