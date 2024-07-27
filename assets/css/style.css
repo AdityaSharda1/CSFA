@@ -116,7 +116,7 @@
 
 /* line 50, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_variables.scss */
 .boxed-btn {
-  background: #fff;
+  background: transparent;
   color: #fff;
   display: inline-block;
   padding: 18px 44px;
@@ -130,6 +130,7 @@
   color: #FF0000;
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 7px;
 }
 
 /* line 67, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_variables.scss */
