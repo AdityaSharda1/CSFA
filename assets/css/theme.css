@@ -63,7 +63,7 @@
 .testimonial {
     flex: 1 1 calc(33.333% - 20px);
     max-width: calc(33.333% - 20px);
-    background: linear-gradient(to right,rgb(142, 110, 255),rgb(208, 195, 255));
+    background: rgb(32, 30, 30);
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
