@@ -308,12 +308,12 @@ p {
 
 /* line 34, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 .bg-img-1 {
-  background-image: url(../img/slider/slider-img-1.jpg);
+  background-image: url(../img/MyPhoto/amal\ human\ flag.jpeg);
 }
 
 /* line 37, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 .bg-img-2 {
-  background-image: url(../img/background-img/bg-img-2.jpg);
+  background-image: url(../img/MyPhoto/amal\ human\ flag.jpeg);
 }
 
 /* line 40, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
@@ -3227,13 +3227,13 @@ hr {
 /* line 31, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
 /* Base styles for all devices */
 .slider-area2 {
-  background-image: url(../img/MyPhoto/harshit1.jpeg);
+  background-image: url(../img/MyPhoto/harshit\ tug\ hold.jpg);
   background-repeat: no-repeat; /* Ensure the background does not repeat */
   background-size: cover;
   background-position: center center;
   position: relative; /* Ensure the overlay can be positioned absolutely */
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .slider-area2::before {
@@ -3243,7 +3243,7 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1); /* Light black transparent overlay */
+  background-color; /* Light black transparent overlay */
 }
 
 /* Responsive adjustments for smaller devices */
@@ -4103,27 +4103,16 @@ hr {
 
 }
 .background-box-wallpaper{
-    width: 100%;
+  width: 100%;
   height: 100%;
-
-  background: #000000;
-  --gap: 5em;
-  --line: 1px;
-  --color: rgba(255, 255, 255, 0.2);
-
+  background-color: #111111;
   background-image: linear-gradient(
-      -90deg,
-      transparent calc(var(--gap) - var(--line)),
-      var(--color) calc(var(--gap) - var(--line) + 1px),
-      var(--color) var(--gap)
-    ),
-    linear-gradient(
-      0deg,
-      transparent calc(var(--gap) - var(--line)),
-      var(--color) calc(var(--gap) - var(--line) + 1px),
-      var(--color) var(--gap)
-    );
-  background-size: var(--gap) var(--gap);
+    32deg,
+    rgba(8, 8, 8, 0.74) 30px,
+    transparent
+  );
+  background-size: 60px 60px;
+  background-position: -5px -5px;
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -6674,9 +6663,10 @@ button {
 
 /* line 13, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_extend.scss */
 .overlay::before {
-  background-image: -moz-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, black 100%);
-  background-image: -webkit-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, black 100%);
-  background-image: -ms-linear-gradient(170deg, rgba(34, 34, 34, 0) 0%, black 100%);
+  background-image: -moz-linear-gradient(170deg, rgba(85, 85, 85, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+background-image: -webkit-linear-gradient(170deg, rgba(85, 85, 85, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+background-image: -ms-linear-gradient(170deg, rgba(85, 85, 85, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+
 }
 .header-csfa{
   color: coral;
@@ -6686,7 +6676,7 @@ button {
 
 
 .background-container-what-we-do{
-  
+  background-color: #121212;
 
 }
 
