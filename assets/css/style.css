@@ -6662,12 +6662,12 @@ button {
 }
 
 /* line 13, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_extend.scss */
-.overlay::before {
+/* .overlay::before {
   background-image: -moz-linear-gradient(170deg, rgba(85, 85, 85, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
 background-image: -webkit-linear-gradient(170deg, rgba(85, 85, 85, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
 background-image: -ms-linear-gradient(170deg, rgba(85, 85, 85, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
 
-}
+} */
 .header-csfa{
   color: coral;
 }
