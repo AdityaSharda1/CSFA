@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/csfablack.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- CSS here -->
     <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
@@ -106,6 +108,72 @@
                 width: 8vh;
                 border-radius: 80%;
             }
+/* css of FAQ */
+style>
+    .dark-theme {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .faq-container {
+        max-width: 700px;
+        width: 100%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #1f1f1f;
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+    .faq-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+        transition: transform 0.3s ease;
+    }
+    .faq-item:hover {
+        transform: translateX(10px);
+    }
+    .faq-question {
+        cursor: pointer;
+        font-size: 20px;
+        margin: 0;
+        padding: 15px;
+        color: #fff;
+        background-color: #333;
+        border-radius: 8px;
+        position: relative;
+        transition: background-color 0.3s ease;
+    }
+    .faq-question::after {
+        content: '\25BC';
+        font-size: 18px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease;
+    }
+    .faq-question.active::after {
+        transform: translateY(-50%) rotate(-180deg);
+    }
+    .faq-question:hover {
+        background-color: #444;
+    }
+    .faq-answer {
+        display: none;
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 15px;
+        background-color: #2a2a2a;
+        border-radius: 8px;
+        line-height: 1.6;
+        transition: max-height 0.3s ease;
+    }
+    .faq-answer p {
+        margin: 0;
+        color: #ffffffb3;
+    }
+
     </style>
 </head>
 <body class="black-bg">
@@ -193,6 +261,7 @@
     </div>
     <!-- Hero End -->
     <!--? Team -->
+    <div class="background-box-wallpaper">
     <div style="display: flex; justify-content: space-around; font-family: Oswald, sans-serif;" class="background-container-what-we-do1">
         <div class="container px-vw-5 py-vh-5">
           <div class="row d-flex align-items-center">
@@ -229,81 +298,263 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section-tittle text-center mb-40 pt-40">
-                        <h2 style="font-size: 60px;">Course Overview</h2>
+                        <h2 style="font-size: 100px;">Course Overview</h2>
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-lg-12" class="display-4" data-aos="fade-right" data-aos-duration="1500">
+                <div class="section-tittle2 mb-20 wow" data-wow-duration="1s" data-wow-delay=".3s">
+                     <div class="front-text">
+                      <h2 class="main-heading">What is the Certified Calisthenics Personal Trainer Course?</h2>
+                      <p>The Certified Calisthenics Personal Trainer Course is a comprehensive program designed for fitness enthusiasts, personal trainers, and coaches who want to specialize in calisthenics. This course combines flexible online learning with hands-on practical sessions and insightful guest lectures from industry experts. Whether you’re new to calisthenics or looking to deepen your expertise, this certification will elevate your career and help you stand out in the fitness industry.
+                    </p>                      
+                    <h1 style="font-size: 50px; padding-bottom: 30px;">Key Benefits</h1>
+                    <p class="content4"><span class="subheading">Gain Expertise:</span>Learn from industry experts with years of experience in calisthenics.
+                    </p>
+                    <p class="content4"><span class="subheading">Boost Your Career:</span>Enhance your professional credibility and expand your client base.
+                    </p>
+                    <p class="content4"><span class="subheading">Transform Lives:</span>Empower others to achieve their fitness goals through personalized calisthenics training.
+                    </p>
+                    <p class="content4"><span class="subheading">Learn from the Best:</span>Attend guest lectures by renowned calisthenics trainers and industry leaders.
+                    </p>
+                      <br>
+                      <br> 
+                      <hr>
+                      <br>
+                  </div>
+               </div>
+           </div>
     <section class="about-area2 fix pb-padding pt-50 pb-80">
                     <div class="left-content2">
                         <!-- section tittle -->
-                        <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                            <div class="front-text">
-                                <h2 class="main-heading">What is the Certified Calisthenics Personal Trainer Course?
-                                </h2>
-                                <p>The Certified Calisthenics Personal Trainer Course is a comprehensive program designed for fitness enthusiasts, personal trainers, and coaches who want to specialize in calisthenics. This course combines flexible online learning with hands-on practical sessions and insightful guest lectures from industry experts. Whether you’re new to calisthenics or looking to deepen your expertise, this certification will elevate your career and help you stand out in the fitness industry.
-                                </p>
-                                    <br>
-                                    <br>
-                                    <hr>
-                                    <br>
-                                <h1 class="main-heading pt-10 pb-10">HOW TO GET CERTIFIED?
+                        <div class="col-12 col-lg-12" class="display-4" data-aos="fade-left" data-aos-duration="1500">
+                            <div class="section-tittle2 mb-20 wow" data-wow-duration="1s" data-wow-delay=".3s">
+                                 <div class="front-text">
+                                  <h2 class="main-heading">What You’ll Learn ?</h2>
+                                  <h1 class="main-heading pt-10 pb-10">Course Curriculum
                                 </h1>
-                                <p>Designed for gym trainers looking to specialize in calisthenics and increase their
-                                    marketability.</p>
-                                    <br>
-                                    <br>
-                                    <hr>
-                                    <br>
-                                    <div class="why-choose-us">
-                                        <div class="overlay"></div>
-                                        <div class="why-choose-us-content">
-                                          <h1 class="main-heading pt-10 pb-10">WHY CHOOSE US?</h1>
-                                          <p class="content4"><span class="subheading">Expert Instructors:</span> Learn from industry-leading calisthenics professionals with years of experience and a deep passion for teaching.</p>
-                                          <p class="content4"><span class="subheading">Comprehensive Curriculum:</span> Our course material is designed to be both thorough and accessible, catering to all levels of experience.</p>
-                                          <p class="content4"><span class="subheading">Flexible Learning:</span> With online modules, live workshops, and community support, our program fits seamlessly into your busy lifestyle.</p>
-                                          <p class="content4"><span class="subheading">Career Advancement:</span> Gain a certification that is respected and recognized, opening doors to new opportunities in the fitness industry.</p>
-                                          <p class="content4"><span class="subheading">Community Focus:</span> Join a network of like-minded individuals who share your passion for calisthenics and continuous improvement.</p>
-                                        </div>
-                                      </div>
-                                      <br>
-                                      <br>
-                                      <hr>
-                                      <br>
-                                  <h1 class="main-heading pt-10 pb-10">Course Duration
-                                  </h1>
-                                  <p>The course is designed to be completed in 12 weeks, with a flexible schedule to accommodate your needs. Participants should expect to dedicate 6-8 hours per week to coursework, practice, and study.</p>
-                                  <!-- <a href="courses.html" class="border-btn">My Courses</a> -->
-                                    <br>
-                                    <br>
-                                    <hr>
-                                    <br>
-                                    
-                                <h1 class="main-heading pt-10 pb-10">OUR VISION
-                                </h1>
-                                <p>We envision a world where calisthenics is a mainstream fitness approach, accessible to everyone regardless of age or fitness level. We believe in the power of bodyweight training to transform lives, build resilience, and foster a lifelong commitment to health and wellness.
+                            <div style="padding-top: 20px;">
+                                <ul class="a" style="list-style-type: circle;">
+                                    <li style="font-size: 30px;">
+                                      <span class="subheading1">Module 1:</span> Introduction to Calisthenics
+                                    </li>
+                                  </ul>
+                                <p> Understand the fundamental principles of calisthenics, including its history, benefits, and how it compares to other forms of exercise. This module will set the foundation for your journey into bodyweight training.
                                 </p>
+                            </div>
+                            <div style="padding-top: 20px;">
+                                <ul class="a" style="list-style-type: circle;">
+                                    <li style="font-size: 30px;">
+                                      <span class="subheading1">Module 2:</span> Anatomy and Physiology
+                                    </li>
+                                  </ul>
+                                <p> Dive deep into the anatomy of the human body, focusing on the muscles and joints most engaged during calisthenics exercises. This knowledge is crucial for creating effective and safe training programs.
+                                </p>
+                            </div>
+                            <div style="padding-top: 20px;">
+                                <ul class="a" style="list-style-type: circle;">
+                                    <li style="font-size: 30px;">
+                                      <span class="subheading1">Module 3:</span>  Training Principles
+                                    </li>
+                                  </ul>
+                                <p>  Explore the core principles of calisthenics training, including progressive overload, specificity, and recovery. Learn how to design personalized workout programs that cater to various fitness levels.
+                                </p>
+                            </div>
+                            <div style="padding-top: 20px;">
+                                <ul class="a" style="list-style-type: circle;">
+                                    <li style="font-size: 30px;">
+                                      <span class="subheading1">Module 4:</span>  Injury Prevention
+                                    </li>
+                                  </ul>
+                                <p>  Learn the best practices for preventing injuries in calisthenics. This module covers proper warm-up techniques, mobility exercises, and how to address common injuries related to bodyweight training.
+                                </p>
+                            </div>
+                            <div style="padding-top: 20px;">
+                                <ul class="a" style="list-style-type: circle;">
+                                    <li style="font-size: 30px;">
+                                      <span class="subheading1">Module 5:</span> Coaching Techniques
+                                    </li>
+                                  </ul>
+                                <p>  Develop your coaching skills by learning how to instruct and motivate clients. This module includes tips on effective communication, exercise demonstration, and how to adapt exercises for different abilities.
+                                </p>
+                            </div>
+                            <div style="padding-top: 20px;">
+                                <ul class="a" style="list-style-type: circle;">
+                                    <li style="font-size: 30px;">
+                                      <span class="subheading1">Module 6:</span> Advanced Skills and Programming
+                                    </li>
+                                  </ul>
+                                <p> Master advanced calisthenics skills such as handstands, muscle-ups, and planches. Learn how to progress clients safely towards these skills while maintaining proper form and reducing the risk of injury.
+                                </p>
+                            </div>
+                            <div style="padding-top: 20px;">
+                                <ul class="a" style="list-style-type: circle;">
+                                    <li style="font-size: 30px;">
+                                      <span class="subheading1">Module 7:</span>  Practical Sessions
+                                    </li>
+                                  </ul>
+                                <p> Participate in hands-on practical sessions where you’ll apply what you’ve learned in a real-world setting. These sessions are designed to build your confidence and competence in delivering calisthenics training.
+                                </p>
+                            </div>
+                            <div style="padding-top: 20px;">
+                                <ul class="a">
+                                    <li style="font-size: 50px; font-weight: bold;">
+                                       Guest Lectures
+                                    </li>
+                                  </ul>
+                                <p> Throughout the course, you’ll have the opportunity to attend guest lectures from renowned calisthenics experts and industry leaders. These sessions provide valuable insights and allow you to learn from the best in the field.
+                                </p>
+                            </div>
+                            
                                     <br>
                                     <br>
                                     <hr>
                                     <br>
-                                <h1 class="main-heading pt-10 pb-10">JOIN US
-                                </h1>
-                                <p>Become part of our vibrant community and start your journey to becoming a certified calisthenics trainer. Whether you're a fitness professional looking to expand your expertise or a beginner eager to dive into the world of calisthenics, CSFA is here to support you every step of the way.
-                                </p>
-                                    <br>
-                                    <br>
-                                    <hr>
-                                    <br>
-                                <h1 class="main-heading pt-10 pb-10">CONTACT US
-                                </h1>
-                                <p>For more information about our programs, please feel free to reach out. We’re here to help you achieve your fitness training goals.
-                                </p>
-                                <a href="courses.html" class="border-btn">My Courses</a>
-                                </div>
-                                </div>
+                              </div>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-12" class="display-4" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="section-tittle2 mb-20 wow" data-wow-duration="1s" data-wow-delay=".3s">
+                             <div class="front-text">
+                              <h2 class="main-heading">Who Should Enroll?</h2>
+                              <p>This course is perfect for fitness professionals, personal trainers, and anyone passionate about bodyweight training. Whether you’re a seasoned trainer looking to expand your skill set or a fitness enthusiast eager to turn your passion into a career, this certification will provide you with the tools you need to succeed. No prior experience in calisthenics is required—just a commitment to learning and a desire to help others reach their fitness goals.
+                            </p>                      
+                              <br>
+                              <br> 
+                              <hr>
+                              <br>
+                          </div>
+                       </div>
+                   </div>
+
+                   <div class="col-12 col-lg-12" class="display-4" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="section-tittle2 mb-20 wow" data-wow-duration="1s" data-wow-delay=".3s">
+                         <div class="front-text">
+                          <h2 class="main-heading">Certification Details</h2>
+                          <h1 class="main-heading pt-10 pb-10"> - Duration  
+                        </h1>
+                          <p>The course is designed to be flexible, allowing you to study at your own pace. Most participants complete the course within 6 to 12 weeks, depending on their availability and prior experience.
+                        </p>
+
+                          <br>
+                          <h1 class="main-heading pt-10 pb-10"> - Assessment  
+                        </h1>
+                          <p>Your understanding of the course material will be assessed through a combination of online quizzes, practical assignments, and a final examination. These assessments are designed to ensure you’re well-prepared to train clients effectively.
+                        </p> 
+
+                        <h1 class="main-heading pt-10 pb-10"> - Certification  
+                        </h1>
+                          <p>Upon successful completion of the course, you will receive a Certified Calisthenics Personal Trainer certification. This certification is recognized by leading fitness organizations and will enhance your credibility as a fitness professional.
+                        </p> 
+                          <br> 
+                          <hr>
+                          <br>
+                      </div>
+                   </div>
+               </div>
+
+               <div class="col-12 col-lg-12" class="display-4" data-aos="fade-right" data-aos-duration="1500">
+                <div class="section-tittle2 mb-20 wow" data-wow-duration="1s" data-wow-delay=".3s">
+                     <div class="front-text">
+                      <h2 class="main-heading">Why Choose Us?</h2>
+                      <h1 class="main-heading pt-10 pb-10"> Why Choose Our Certification?
+                    </h1>
+                    <div style="padding-top: 20px;">
+                        <ul class="a" style="list-style-type: circle;">
+                            <li style="font-size: 30px;">
+                              <span class="subheading1">◉ Expert Instructors</span>
+                            </li>
+                          </ul>
+                        <p> Our course is taught by experienced instructors who are experts in calisthenics. They bring years of practical experience and knowledge to the table, ensuring you receive the highest quality education.
+                        </p>
+                    </div> 
+                    <div style="padding-top: 20px;">
+                        <ul class="a" style="list-style-type: circle;">
+                            <li style="font-size: 30px;">
+                              <span class="subheading1">◉ Comprehensive Study Materials</span>
+                            </li>
+                          </ul>
+                        <p> We provide you with all the resources you need to succeed, including detailed course manuals, video tutorials, and access to an online community of fellow students and trainers.
+                        </p>
+                    </div>
+                    <div style="padding-top: 20px;">
+                        <ul class="a" style="list-style-type: circle;">
+                            <li style="font-size: 30px;">
+                              <span class="subheading1">◉ Flexible Learning</span>
+                            </li>
+                          </ul>
+                        <p> Our course is designed to fit into your busy schedule. Whether you prefer to study in the evenings, on weekends, or at your own pace, our online platform makes it easy to access the material whenever and wherever you want.
+                        </p>
+                    </div>
+                    <div style="padding-top: 20px;">
+                        <ul class="a" style="list-style-type: circle;">
+                            <li style="font-size: 30px;">
+                              <span class="subheading1">◉ Community Support</span>
+                            </li>
+                          </ul>
+                        <p> Join a network of like-minded professionals who share your passion for calisthenics. Our community forum allows you to connect with other students, ask questions, and share your progress.
+                        </p>
+                    </div>  
+                    <div style="padding-top: 20px;">
+                        <ul class="a" style="list-style-type: circle;">
+                            <li style="font-size: 30px;">
+                              <span class="subheading1">◉ Guest Lectures and Practical Sessions</span>
+                            </li>
+                          </ul>
+                        <p> Learn directly from top experts in the field during our guest lectures, and apply your knowledge in practical sessions designed to enhance your real-world training skills.
+                        </p>
+                    </div>                   
+                      <br>
+                      <br> 
+                      <hr>
+                      <br>
+                  </div>
+               </div>
+           </div>
                 </div>
             </div>
     </section>
+    <!-- FAQ -->
+    
+  <div class="faq-container dark-theme">
+    <h2 style="padding: 40px;" class="main-heading">Frequently Ask Questions (FAQ)</h2>
+    <div class="faq-item">
+        <h3 class="faq-question"> Do I need prior experience in calisthenics to take this course?</h3>
+        <div class="faq-answer">
+            <p>No prior experience is necessary. Our course is designed to accommodate all fitness levels, from beginners to advanced practitioners.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question">How long do I have to complete the course?</h3>
+        <div class="faq-answer">
+            <p>You have 12 months to complete the course, giving you plenty of time to study at your own pace.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question"> Is the certification recognized internationally?</h3>
+        <div class="faq-answer">
+            <p>Yes, our certification is recognized by leading fitness organizations around the world.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question"> Can I work as a personal trainer after completing this course?</h3>
+        <div class="faq-answer">
+            <p>Yes, this certification will qualify you to work as a calisthenics personal trainer, either independently or within a fitness organization.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question">How are the practical sessions conducted?</h3>
+        <div class="faq-answer">
+            <p>Practical sessions are conducted in-person or via live online workshops, allowing you to apply what you’ve learned in a real-world setting. These sessions are scheduled to accommodate various time zones and locations.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question"> What topics are covered in the guest lectures?</h3>
+        <div class="faq-answer">
+            <p> Guest lectures cover a wide range of topics, from advanced training techniques to business strategies in the fitness industry, providing you with valuable insights from industry leaders.</p>
+        </div>
+    </div>
+</div>
             <!-- <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30">
@@ -442,6 +693,8 @@
                 </div>
             </div>
         </div>
+  
+
     </section>
 </main>
 <footer>
@@ -554,6 +807,7 @@
             </div>
         </div>
     </div>
+</div>
     <!-- Footer End-->
 </footer>
 </div>
@@ -563,6 +817,7 @@
 </div> -->
 
 <!-- JS here -->
+
 
 <script src="./assets/js/vendor/modernizr-3.5.0.min.js">
 </script>
@@ -612,6 +867,35 @@
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
 <script src="index.js"></script>
+    <script>
+        AOS.init();
+
+
+
+
+        // js of FAQ
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+
+                faqQuestions.forEach(q => {
+                    q.classList.remove('active');
+                    q.nextElementSibling.style.display = 'none';
+                });
+
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                    question.classList.add('active');
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
+        });
+
+      </script>
 
 </body>
 

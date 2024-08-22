@@ -3227,7 +3227,7 @@ hr {
 /* line 31, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
 /* Base styles for all devices */
 .slider-area2 {
-  background-image: url(../img/MyPhoto/harshit\ tug\ hold.jpg);
+  background-image: url(../img/MyPhoto/amal\ human\ flag.jpeg);
   background-repeat: no-repeat; /* Ensure the background does not repeat */
   background-size: cover;
   background-position: center center;
@@ -6015,6 +6015,12 @@ hr {
 /* line 1418, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .comments-area .comment-list.left-padding {
   padding-left: 25px;
+}
+.subheading1{
+  font-size: 30px;
+  font-weight: 900;
+  padding-right: 40px;
+  
 }
 
 @media (max-width: 413px) {
