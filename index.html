@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/csfablack.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   
 
@@ -222,6 +222,7 @@
                     background-position: center center;
                 }
             }
+            
 
             #page2 {
                 width: 100%;
@@ -276,6 +277,26 @@
                     transform: translateX(-100%);
                 }
             }
+          /* Hide mobile video by default */
+.mobile-video {
+    display: none;
+}
+
+/* Show mobile video on screens smaller than 768px and hide the desktop image */
+@media (max-width: 767px) {
+    .desktop-image {
+        display: none;
+    }
+    .mobile-video {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .mobile-video video {
+        width: 100%;
+        height: 100%;
+    }
+}
 
             video {
                 position: relative;
@@ -430,16 +451,25 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <div class="desktop-image" style="background-image: url('assets/img/MyPhoto/harshit\ handstand2.jpg');">
+                    <!-- Desktop Image -->
+                    <div class="desktop-image" style="background-image: url('assets/img/MyPhoto/harshit\ handstand2.jpg');"></div>
+                
+                    <!-- Mobile Video -->
+                    <div class="mobile-video">
+                        <video autoplay muted loop>
+                            <source src="Unlock youR Potential_20240731_153015_0001.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <div class="mobile-image"
-                        style="background-image: url('assets/img/MyPhoto/harshit\ tug\ hold.jpg');"></div>
+                
                     <div class="overlay"></div>
+                
                     <div class="carousel-caption d-none d-md-block">
                         <h1 data-animation="fadeInLeft" data-delay="2.0s">Professional Training</h1>
                         <span data-animation="fadeInLeft" data-delay="0.1s">Enhance your fitness skills</span>
                     </div>
                 </div>
+                
                 <!-- Slide 3 -->
                 <div class="carousel-item">
                     <div class="desktop-image"
@@ -636,7 +666,7 @@
                 <div style="background-color: rgb(20, 19, 19);" class="support-wrapper align-items-center">
                     <div class="right-content2">
                         <!-- img -->
-                        <div class="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                        <div class="right-img wow zoom-in" data-wow-duration="1s" data-wow-delay=".1s">
                             <img src="assets/img/MyPhoto/harshit handstand.jpg" alt="">
                         </div>
                     </div>
